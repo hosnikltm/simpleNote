@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radioG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent"
+                >
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioButton_green"
+                    android:layout_width="@dimen/layout_width30"
+                    android:layout_height="@dimen/layout_height30"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:backgroundTintMode="src_over"
+                    android:foreground="@drawable/selector_color_green"
+                    tools:ignore="UnusedAttribute" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_cyan"
+                    android:layout_width="@dimen/layout_width30"
+                    android:layout_height="@dimen/layout_height30"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:foreground="@drawable/selector_color_cyan"
+                    app:buttonTint="@color/color_cyan"
+                    tools:ignore="UnusedAttribute" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioButton_deep_orange"
+                    android:layout_width="@dimen/layout_width30"
+                    android:layout_height="@dimen/layout_height30"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:foreground="@drawable/selector_color_deep_orange"
+                    app:buttonTint="@color/color_deepOrange"
+                    tools:ignore="UnusedAttribute" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioButton_pink"
+                    android:layout_width="@dimen/layout_width30"
+                    android:layout_height="@dimen/layout_height30"
+                    android:layout_marginLeft="8dp"
+                    android:foreground="@drawable/selector_color_pink"
+                    app:buttonTint="@color/color_pink"
+                    tools:ignore="RtlHardcoded,UnusedAttribute" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioButton_light_blue"
+                    android:layout_width="@dimen/layout_width30"
+                    android:layout_height="@dimen/layout_height30"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:foreground="@drawable/selector_color_light_blue"
+                    app:buttonTint="@color/color_lightBlue"
+                    tools:ignore="UnusedAttribute" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioButton_teal"
+                    android:layout_width="@dimen/layout_width30"
+                    android:layout_height="@dimen/layout_height30"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:foreground="@drawable/selector_color_teal"
+                    app:buttonTint="@color/color_teal"
+                    tools:ignore="UnusedAttribute" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioButton_lime"
+                    android:layout_width="@dimen/layout_width30"
+                    android:layout_height="@dimen/layout_height30"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:foreground="@drawable/selector_color_lime"
+                    app:buttonTint="@color/color_lime"
+                    tools:ignore="UnusedAttribute" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioButton_red"
+                    android:layout_width="@dimen/layout_width30"
+                    android:layout_height="@dimen/layout_height30"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:foreground="@drawable/selector_color_red"
+                    app:buttonTint="@color/color_red"
+                    tools:ignore="UnusedAttribute" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioButton_purple"
+                    android:layout_width="@dimen/layout_width30"
+                    android:layout_height="@dimen/layout_height30"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:foreground="@drawable/selector_color_purple"
+                    app:buttonTint="@color/color_purple"
+                    tools:ignore="UnusedAttribute" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioButton_yellow"
+                    android:layout_width="@dimen/layout_width30"
+                    android:layout_height="@dimen/layout_height30"
+                    android:layout_marginLeft="8dp"
+                    android:foreground="@drawable/selector_color_yellow"
+                    app:buttonTint="@color/color_yellow"
+                    tools:ignore="RtlHardcoded,UnusedAttribute" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="@string/title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/editText_subTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/subTitle"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_title"
+        tools:ignore="Autofill" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_save"
+        tools:ignore="KeyboardInaccessibleWidget" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

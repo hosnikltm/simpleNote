@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Materil</string>
+    <string name="name">In our previous article, we have explained how to implement Android RecyclerView with multiple view types. Now we are here show you how to do single selection and multiple selection in android recyclerview.
+Normally, every coder has a requirement for single selection and multi selection functionality in each and every project. We have already single selection functionality in android as RadioGroup as controller. For multi selection, we haven’t any default controller. For that we have to do manually.
+As we know, android recyclerview is of list type controller. So we can do single selection and multi selection feature by this controller. so let’s begin now.
+Single Selection in Android RecyclerView
+For single selection, we just need to hold the position that clicked in the recyclerview. When user clicks the another position, forget previous one and make new position as hold position. Make a new position on hold is not the big thing to do, but main thing is to forget the previous position. For that we are using notifyItemChanged(position) method of recyclerview.
+SingleAdapter.java</string>
+    <string name="title">enter Title</string>
+    <string name="subTitle">enter Sub Title</string>
+</resources>
